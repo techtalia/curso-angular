@@ -1,0 +1,9 @@
+<div class ="separator">
+    <div *ngIf="canShow">Estamos mostrando isso porque o boolean é True</div>
+    <h2 *ngIf="name ==='Talia'">O nome é Talia</h2>
+    <h2 *ngIf="name2 === 'Talia';else nameNotFound">O nome2 é Talia</h2>
+    
+    <ng-template #nameNotFound>
+        <p>Nome não encontrado</p>
+    </ng-template>
+</div>
